@@ -1,5 +1,0 @@
-"0","#| label: model-plot"
-"0",""
-"0","# 模型诊断（chain mixing等）"
-"0","plot(stroop_bm)"
-"0",""

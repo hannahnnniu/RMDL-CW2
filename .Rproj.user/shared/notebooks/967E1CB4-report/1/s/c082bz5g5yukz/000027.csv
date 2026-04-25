@@ -1,0 +1,6 @@
+"0","#| label: model-plot"
+"0","#| fig-height: 6"
+"0",""
+"0","# Model diagnostics"
+"0","plot(stroop_bm)"
+"0",""

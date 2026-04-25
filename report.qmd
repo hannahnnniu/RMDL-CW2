@@ -9,7 +9,7 @@ execute:
 
 ## Background
 
-The Stroop task is one of the most classic experimental paradigms in cognitive psychology. First described by Stroop @stroop1935studies, the task requires participants to name the font color of a color word while ignoring the word's meaning. Studies have consistently found that when word meanings and font colors are incongruent (e.g., "RED" is written in blue), participants' reaction times are significantly longer and their error rates are higher, while they perform better under congruent conditions (e.g., "RED" is written in red). This phenomenon is knows as the Stroop interference effect and is generally explained as a conflict between automated lexical semantic processing and conscious color naming [@macleod1991half].
+The Stroop task is one of the most classic experimental paradigms in cognitive psychology. First described by Stroop [@stroop1935studies], the task requires participants to name the font color of a color word while ignoring the word's meaning. Studies have consistently found that when word meanings and font colors are incongruent (e.g., "RED" is written in blue), participants' reaction times are significantly longer and their error rates are higher, while they perform better under congruent conditions (e.g., "RED" is written in red). This phenomenon is knows as the Stroop interference effect and is generally explained as a conflict between automated lexical semantic processing and conscious color naming [@macleod1991half].
 
 For bilingual speakers, the Stroop task provides a window into how the two language systems influence each other. Research shows that L2 speakers often exhibit a greater interference effect than L1 native speakers when completing the Stroop task [@chen1986development; @rosselli2002stroop]. This is generally attributed to the lower level of automation in L2 lexical access: because L2 word processing is less fluent and automatic than L1, suppressing semantic interference requires more cognitive resources, resulting in longer reaction times under inconsistent conditions.
 
@@ -41,7 +41,7 @@ A Bayesian linear mixed-effects model was fitted using the `brms` package [@burk
 
 The interaction term `condition × group` directly addresses RQ2: if the 90% CrI of the interaction coefficient lies entirely below zero, this indicates that the Stroop interference effect is smaller in L2 speakers than in L1 speakers. The main effect of condition addresses RQ1: if its 90% CrI lies entirely above zero, this provides evidence for a Stroop interference effect.
 
-**Data Availability:** All data, analysis code, and experimental materials are publicly stored at: \[your repository link\]. Analysis is fully computably reproducible; all analyses are performed in R (version 4.5.1), and package versions are recorded via sessionInfo() at the end of the report.
+**Data Availability:** All data, analysis code, and experimental materials are publicly stored at: \[<https://github.com/hannahnnniu/RMDL-CW2/tree/main/data>\]. Analysis is fully computably reproducible; all analyses are performed in R (version 4.5.1), and package versions are recorded via sessionInfo() at the end of the report.
 
 ## Data
 
@@ -250,11 +250,11 @@ summary(stroop_bm, prob = 0.9)
 
 The model converged successfully, with all Rhat values equal to 1.00 and adequate effective sample sizes (Bulk_ESS \> 1000 for all parameters), indicating reliable posterior estimates.
 
-**RQ1 — Stroop interference effect**: The main effect of condition for L1 speakers was β = 0.31 (90% CrI \[0.20, 0.43\]). As the CrI lies entirely above zero, there is evidence for a robust Stroop interference effect in L1 speakers: incongruent trials elicited reliably longer RTs than congruent trials.
+**RQ1: Stroop interference effect**: The main effect of condition for L1 speakers was $\beta$ = 0.31 (90% CrI \[0.20, 0.43\]). As the CrI lies entirely above zero, there is evidence for a robust Stroop interference effect in L1 speakers: incongruent trials elicited reliably longer RTs than congruent trials.
 
-**RQ2 — Group difference**: The condition × group interaction was β = -0.27 (90% CrI \[-0.43, -0.11\]). As the CrI lies entirely below zero, there is evidence that the Stroop interference effect was reliably smaller in L2 speakers than in L1 speakers. The estimated interference effect for L1 speakers was β = 0.31 (90% CrI \[0.20, 0.43\]), whereas for L2 speakers it was β = 0.04 (90% CrI \[-0.07, 0.16\]). As the L2 CrI includes zero, there is not enough evidence to conclude that L2 speakers showed a reliable Stroop interference effect. These findings are contrary to RH2, which predicted a larger interference effect in L2 speakers.
+**RQ2: Group difference**: The condition × group interaction was $\beta$ = -0.27 (90% CrI \[-0.43, -0.11\]). As the CrI lies entirely below zero, there is evidence that the Stroop interference effect was reliably smaller in L2 speakers than in L1 speakers. The estimated interference effect for L1 speakers was $\beta$ = 0.31 (90% CrI \[0.20, 0.43\]), whereas for L2 speakers it was $\beta$ = 0.04 (90% CrI \[-0.07, 0.16\]). As the L2 CrI includes zero, there is not enough evidence to conclude that L2 speakers showed a reliable Stroop interference effect. These findings are contrary to RH2, which predicted a larger interference effect in L2 speakers.
 
-The main effect of group was β = -0.10 (90% CrI \[-0.23, 0.03\]). As the CrI includes zero, there is no reliable evidence for a difference in baseline RT between L1 and L2 speakers on congruent trials.
+The main effect of group was $\beta$ = -0.10 (90% CrI \[-0.23, 0.03\]). As the CrI includes zero, there is no reliable evidence for a difference in baseline RT between L1 and L2 speakers on congruent trials.
 
 The fixed effects coefficients and their 90% credible intervals are summarised below using `fixef()`.
 
@@ -292,12 +292,13 @@ quantile(stroop_draws$stroop_L1, probs = c(0.05, 0.5, 0.95)) |> round(2)
 quantile(stroop_draws$stroop_L2, probs = c(0.05, 0.5, 0.95)) |> round(2)
 ```
 
-The estimated Stroop interference effect for L1 speakers was β = 0.31 (90% CrI \[0.20, 0.43\]). As the CrI lies entirely above zero, there is strong evidence for a reliable interference effect in L1 speakers. In contrast, the estimated interference effect for L2 speakers was β = 0.04 (90% CrI \[-0.07, 0.16\]). As this CrI includes zero, there is not enough evidence to conclude that L2 speakers showed a reliable Stroop interference effect.
+The estimated Stroop interference effect for L1 speakers was $\beta$ = 0.31 (90% CrI \[0.20, 0.43\]). As the CrI lies entirely above zero, there is strong evidence for a reliable interference effect in L1 speakers. In contrast, the estimated interference effect for L2 speakers was $\beta$ = 0.04 (90% CrI \[-0.07, 0.16\]). As this CrI includes zero, there is not enough evidence to conclude that L2 speakers showed a reliable Stroop interference effect.
 
 The plots below show the posterior distributions (left) and trace plots (right) for the model parameters. Trace plots show the sampling behaviour of the 4 chains across 1000 post-warmup iterations.
 
 ```{r}
 #| label: model-plot
+#| fig-height: 7
 
 # Model diagnostics
 plot(stroop_bm)
@@ -307,7 +308,7 @@ All posterior distributions show smooth, unimodal shapes, and all trace plots sh
 
 ## Discussion
 
-This study investigated the Stroop interference effect in L1 and L2 English speakers. In line with RH1, a robust Stroop interference effect was observed in L1 speakers (β = 0.31, 90% CrI \[0.20, 0.43\]), replicating the classic finding that incongruent colour-word combinations slow response times [@stroop1935studies; @macleod1991half]. However, contrary to RH2, L2 speakers showed a substantially smaller and unreliable interference effect (β = 0.04, 90% CrI \[-0.07, 0.16\]), suggesting that the Stroop effect may not generalise equally across speakers with different levels of English proficiency.
+This study investigated the Stroop interference effect in L1 and L2 English speakers. In line with RH1, a robust Stroop interference effect was observed in L1 speakers ($\beta$ = 0.31, 90% CrI \[0.20, 0.43\]), replicating the classic finding that incongruent colour-word combinations slow response times [@stroop1935studies; @macleod1991half]. However, contrary to RH2, L2 speakers showed a substantially smaller and unreliable interference effect ($\beta$ = 0.04, 90% CrI \[-0.07, 0.16\]), suggesting that the Stroop effect may not generalise equally across speakers with different levels of English proficiency.
 
 The absence of a reliable Stroop interference effect in L2 speakers is consistent with accounts of reduced automaticity in L2 lexical access. If L2 colour words are not processed automatically, semantic activation may be insufficient to generate meaningful interference during ink colour naming. This interpretation aligns with the view that Stroop interference requires a threshold level of automaticity to emerge [@chen1986development]: speakers who have not reached this threshold may show little or no interference, regardless of their general language proficiency.
 
