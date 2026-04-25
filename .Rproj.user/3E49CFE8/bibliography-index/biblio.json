@@ -1,0 +1,236 @@
+{
+    "sources": [
+        {
+            "author": [
+                {
+                    "family": "Stroop",
+                    "given": "J Ridley"
+                }
+            ],
+            "container-title": "Journal of experimental psychology",
+            "id": "stroop1935studies",
+            "issue": "6",
+            "issued": {
+                "date-parts": [
+                    [
+                        1935
+                    ]
+                ]
+            },
+            "page": "643",
+            "publisher": "Psychological Review Company",
+            "title": "Studies of interference in serial verbal reactions.",
+            "type": "article-journal",
+            "volume": "18"
+        },
+        {
+            "author": [
+                {
+                    "family": "MacLeod",
+                    "given": "Colin M"
+                }
+            ],
+            "container-title": "Psychological bulletin",
+            "id": "macleod1991half",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        1991
+                    ]
+                ]
+            },
+            "page": "163",
+            "publisher": "American Psychological Association",
+            "title": "Half a century of research on the stroop effect: An integrative review.",
+            "title-short": "Half a century of research on the stroop effect",
+            "type": "article-journal",
+            "volume": "109"
+        },
+        {
+            "author": [
+                {
+                    "family": "Chen",
+                    "given": "Hsuan-chih"
+                },
+                {
+                    "family": "Ho",
+                    "given": "Connie"
+                }
+            ],
+            "container-title": "Journal of Experimental Psychology: Learning, Memory, and Cognition",
+            "id": "chen1986development",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        1986
+                    ]
+                ]
+            },
+            "page": "397",
+            "publisher": "American Psychological Association",
+            "title": "Development of stroop interference in chinese-english bilinguals.",
+            "type": "article-journal",
+            "volume": "12"
+        },
+        {
+            "author": [
+                {
+                    "family": "Rosselli",
+                    "given": "Mónica"
+                },
+                {
+                    "family": "Ardila",
+                    "given": "Alfredo"
+                },
+                {
+                    "family": "Santisi",
+                    "given": "Mirtha N"
+                },
+                {
+                    "family": "Arecco",
+                    "given": "Marı́a Del Rosario"
+                },
+                {
+                    "family": "Salvatierra",
+                    "given": "Judy"
+                },
+                {
+                    "family": "Conde",
+                    "given": "Alejandra"
+                },
+                {
+                    "family": "Lenis",
+                    "given": "BONIE"
+                }
+            ],
+            "container-title": "Journal of the International Neuropsychological Society",
+            "id": "rosselli2002stroop",
+            "issue": "6",
+            "issued": {
+                "date-parts": [
+                    [
+                        2002
+                    ]
+                ]
+            },
+            "page": "819-827",
+            "publisher": "Cambridge University Press",
+            "title": "Stroop effect in spanish–english bilinguals",
+            "type": "article-journal",
+            "volume": "8"
+        },
+        {
+            "author": [
+                {
+                    "family": "Goldfarb",
+                    "given": "Liat"
+                },
+                {
+                    "family": "Tzelgov",
+                    "given": "Joseph"
+                }
+            ],
+            "container-title": "Quarterly Journal of Experimental Psychology",
+            "id": "goldfarb2007cause",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        2007
+                    ]
+                ]
+            },
+            "page": "179-185",
+            "publisher": "SAGE Publications Sage UK: London, England",
+            "title": "The cause of the within-language stroop superiority effect and its implications",
+            "type": "article-journal",
+            "volume": "60"
+        },
+        {
+            "author": [
+                {
+                    "family": "Wickham",
+                    "given": "Hadley"
+                },
+                {
+                    "family": "Averick",
+                    "given": "Mara"
+                },
+                {
+                    "family": "Bryan",
+                    "given": "Jennifer"
+                },
+                {
+                    "family": "Chang",
+                    "given": "Winston"
+                },
+                {
+                    "family": "McGowan",
+                    "given": "Lucy D’Agostino"
+                },
+                {
+                    "family": "François",
+                    "given": "Romain"
+                },
+                {
+                    "family": "Grolemund",
+                    "given": "Garrett"
+                },
+                {
+                    "family": "Lemon",
+                    "given": "J"
+                },
+                {
+                    "family": "Kassambara",
+                    "given": "Alboukadel"
+                },
+                {
+                    "family": "Mundt",
+                    "given": "Fabian"
+                },
+                {
+                    "literal": "others"
+                }
+            ],
+            "container-title": "Journal of Open Source Software",
+            "id": "wickham2019r",
+            "issued": {
+                "date-parts": [
+                    [
+                        2019
+                    ]
+                ]
+            },
+            "page": "1-20",
+            "title": "R: A language and environment for statistical computing",
+            "title-short": "R",
+            "type": "article-journal",
+            "volume": "8"
+        },
+        {
+            "author": [
+                {
+                    "family": "Bürkner",
+                    "given": "Paul-Christian"
+                }
+            ],
+            "container-title": "Journal of statistical software",
+            "id": "burkner2017brms",
+            "issued": {
+                "date-parts": [
+                    [
+                        2017
+                    ]
+                ]
+            },
+            "page": "1-28",
+            "title": "Brms: An r package for bayesian multilevel models using stan",
+            "title-short": "Brms",
+            "type": "article-journal",
+            "volume": "80"
+        }
+    ],
+    "project_biblios": []
+}

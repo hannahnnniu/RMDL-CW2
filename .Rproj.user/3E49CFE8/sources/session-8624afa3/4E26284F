@@ -1,0 +1,31 @@
+{
+    "id": "4E26284F",
+    "path": "~/Desktop/RMDL/rmdl-template/report.qmd",
+    "project_path": "report.qmd",
+    "type": "quarto_markdown",
+    "hash": "1674747240",
+    "contents": "",
+    "dirty": false,
+    "created": 1774719099805.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "rmdVisualMode": "true",
+        "rmdVisualWrapConfigured": "true",
+        "docOutlineVisible": "1",
+        "rmdVisualCollapsedChunks": "",
+        "cursorPosition": "319,0",
+        "scrollLine": "317",
+        "rmdVisualModeLocation": "21302:10385.5"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1777158136,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1777158136155,
+    "read_only": false,
+    "read_only_alternatives": []
+}

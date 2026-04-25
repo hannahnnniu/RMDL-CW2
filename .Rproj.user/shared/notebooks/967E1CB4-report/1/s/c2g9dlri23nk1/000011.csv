@@ -1,0 +1,4 @@
+"0","#| label: model-conditional-effects"
+"0",""
+"0","# 可视化预测值"
+"0","plot(conditional_effects(stroop_bm, effects = ""condition:group""))"

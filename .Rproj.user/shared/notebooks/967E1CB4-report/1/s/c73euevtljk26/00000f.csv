@@ -1,0 +1,7 @@
+"0","#| label: summarise-data-check"
+"0","# 查看每个被试的平均RT"
+"0","exp_data_clean |>"
+"0","  group_by(participant_id, group, condition) |>"
+"0","  summarise(mean_rt = mean(RT), .groups = ""drop"") |>"
+"0","  pivot_wider(names_from = condition, values_from = mean_rt) |>"
+"0","  arrange(group)"
